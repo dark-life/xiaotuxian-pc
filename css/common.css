@@ -1,0 +1,246 @@
+/* 头部和底部各个页面相同的样式 */
+/* 版心居中 */
+.wrapper {
+	margin: 0 auto;
+	width: 1240px;
+}
+
+/* 快捷导航 */
+.shortcut {
+	height: 52px;
+	background-color: #333;
+}
+
+.shortcut .wrapper {
+	height: 52px;
+}
+
+.shortcut .wrapper ul{
+	display: flex;
+	justify-content: flex-end;
+	line-height: 52px;
+}
+
+.shortcut .wrapper ul li a {
+	padding-left: 15px;
+	padding-right: 15px;
+	border-right: 1px solid #999;
+	font-size: 14px;
+	color: #fff;
+}
+
+.shortcut .wrapper ul li:nth-child(7) a{
+	border-right: 0;
+	padding-right: 0;
+}
+
+.shortcut li .iconfont {
+	margin-right: 4px;
+	vertical-align: bottom;
+}
+
+.shortcut .wrapper ul li .login {
+	color: #5EB69C;
+}
+
+/* 头部 */
+.header {
+	display: flex;
+	margin-top: 22px;
+	margin-bottom: 22px;
+	height: 88px;
+}
+
+/* 头部:logo */
+.header .logo {
+	margin-right: 41px;
+}
+
+.header .logo a {
+	display: block;
+	width: 200px;
+	height: 88px;
+	background-image: url(../images/logo.png);
+	font-size: 0;
+}
+
+/* 头部:导航 */
+.header .nav ul {
+	display: flex;
+	margin-right: 28px;
+	line-height: 88px;
+}
+
+.header .nav ul li {
+	margin-right: 47px;
+}
+
+.header .nav ul li a:hover {
+	padding-bottom: 10px;
+	border-bottom: 2px solid #5EB69C;
+	color: #5EB69C;
+}
+
+/* 头部:搜索框 */
+.search {
+	display: flex;
+	margin-top: 30px;
+	margin-right: 55px;
+	width: 170px;
+	height: 34px;
+	border-bottom: 2px solid #F4F4F4;
+}
+
+.search .iconfont {
+	margin-right: 8px;
+	font-size: 18px;
+	color: #CCCCCC ;
+}
+
+.search input {
+	/* 浏览器优先生效input标签的默认宽度，所有flex不生效 */
+	/* 解决办法:充值input标签默认宽度 -> width:0 */
+	flex: 1;
+	width: 0;
+}
+
+.search input::placeholder {
+	font-size: 16px;
+	color: #ccc;
+}
+
+/* 头部:购物车 */
+.cart {
+	position: relative;
+	margin-top: 23px;
+}
+
+.cart .iconfont {
+	font-size: 30px;
+}
+
+.cart i {
+	position: absolute;
+	top: 2px;
+	/* 定位左对齐,文字多了,向右撑开 */
+	left: 13px;	
+	padding: 0 6px;
+	height: 15px;
+	background-color: #E26237;
+	border-radius: 8px;
+	font-size: 14px;
+	color: #fff;
+	line-height: 15px;
+}
+
+/* 底部 */
+.footer {
+	height: 581px;
+	background-color: #F5F5F5;
+}
+
+/* 底部:服务 */
+.footer .service {
+	padding: 60px 0;
+	height: 178px;
+	border-bottom: 1px solid #E8E8E8 ;
+}
+
+.footer .service ul {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.footer .service li {
+	display: flex;
+	width: 190px;
+	height: 58px;
+	font-size: 28px;
+	line-height: 58px;
+}
+
+.footer .service li h5 {
+	margin-right: 20px;
+	width: 58px;
+	height: 58px;
+	background-image: url(../images/sprite.png);
+}
+
+.footer .service li:nth-child(2) h5 {
+	background-position: 0 -58px;
+}
+
+.footer .service li:nth-child(3) h5 {
+	background-position: 0 -116px;
+}
+
+.footer .service li:nth-child(4) h5 {
+	background-position: 0 -174px;
+}
+
+
+/* 底部:帮助中心 */
+.footer .help-center {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 60px;
+	height: 302px;
+}
+
+.footer .help-center .left {
+	display: flex;
+}
+
+.footer .help-center .left dl {
+	margin-right: 84px;
+}
+
+.footer .help-center .left dl:last-child {
+	margin-right: 0;
+}
+
+.footer .help-center .left dt {
+	margin-bottom: 30px;
+	font-size: 18px;
+}
+
+.footer .help-center .left dd {
+	margin-bottom: 10.5px;
+	color: #969696;
+}
+
+.footer .help-center .left dd .iconfont {
+	color: #5EB69C;
+}
+
+.footer .help-center .right ul {
+	display: flex;
+}
+
+.footer .help-center .right li {
+	color: #969696 ;
+	text-align: center;
+}
+
+.footer .help-center .right li:first-child {
+	margin-right: 55px;
+}
+
+.footer .help-center .right .pic {
+	margin-bottom: 10px;
+}
+
+/* 底部:版权 */
+.footer .copyright {
+	text-align: center;
+}
+
+.footer .copyright p {
+	margin-bottom: 10px;
+	color: #A1A1A1;
+}
+
+.footer .copyright a {
+	margin: 0 10px;
+	color: #A1A1A1;
+}
